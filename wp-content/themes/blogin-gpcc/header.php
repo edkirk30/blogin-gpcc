@@ -9,7 +9,17 @@
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
     <link rel="alternate" type="application/rss+xml" title="<?php esc_attr('RSS 2.0'); ?>" href="<?php esc_url(bloginfo('rss2_url')); ?>" />
     <link rel="pingback" href="<?php esc_url(bloginfo('pingback_url')); ?>" />
-    <?php wp_head(); ?>   
+    <?php wp_head(); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90461163-1', 'auto');
+  ga('send', 'pageview');
+
+</script>   
 </head>
 <body <?php body_class();?>>
      <div id="shell">

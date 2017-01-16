@@ -1,5 +1,3 @@
-#œed´∑∂wedwedewdf
-
 <h3 class="widget-title"><?php _e('Latest Posts', 'blogim');?></h3>
 <div class="wrap">
 <?php

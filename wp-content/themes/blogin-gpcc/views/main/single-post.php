@@ -23,8 +23,9 @@ $blogim_img = ($blogim_img == '') ? esc_url( get_template_directory_uri() ) . '/
        
 	<div itemprop="articleBody" class="format-text">
 		<?php if($blogim_format == 'image'){
-			the_post_thumbnail('full');
-		}?>
+			//the_post_thumbnail('full');
+        }?>
+        <?php the_post_thumbnail('full'); ?>
 		<?php the_content();?>
 	</div><!-- end of format text -->
 	
@@ -83,7 +84,7 @@ $blogim_img = ($blogim_img == '') ? esc_url( get_template_directory_uri() ) . '/
 </div><!-- end of of author content -->
 
 <div class="related-content">
-	<h3 class="widget-title"><?php _e('You Might Also Like', 'blogim');?></h3>
+	<h3 class="widget-title"><?php _e('More', 'blogim');?></h3>
 	<div class="row">
 		 <?php
 			global $post;
@@ -92,7 +93,7 @@ $blogim_img = ($blogim_img == '') ? esc_url( get_template_directory_uri() ) . '/
 			      'category__in' => wp_get_post_categories($post->ID),
 			      'numberposts' => 3,
 			      'post__not_in' => array($post->ID),
-			      'orderby'=> 'rand'
+			      'orderby'=> 'date'
 		       )
 	       );
 	       if( $blogim_related ) foreach( $blogim_related as $post ) {

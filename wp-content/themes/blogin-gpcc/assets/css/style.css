@@ -6,7 +6,7 @@
 
 .slicknav_nav, #menubar {
 
-        background-color: white !important;
+    background-color: white !important;
 
 }
 
@@ -35,6 +35,313 @@ body{
 	font-family: 'Lato','Arial','Helvetica';
 	font-size: 16px;
 }
+/*
+ * #############################
+ * GPCC Modifications 
+ */
+
+h1 {
+    font-size: 200%;
+}
+
+.title-image {
+
+    display:none;
+    margin-bottom: -3px;
+}
+
+.h-1 #logo {
+
+    padding-top: 20px !important;
+
+}
+
+.category #page-title span, .category #page-title .bread {
+
+    display: none;
+
+}
+
+.category h2 {
+
+    font-size: 200%;
+
+}
+
+.content figure, article .format-text {
+
+    text-align: center;
+
+}
+
+article p, article div {
+
+    text-align: left !important;
+
+}
+
+.content figure img, .single-content .format-text .wp-post-image {
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 100%;
+    max-height: 650px;
+
+}
+
+#logo {
+
+    padding-bottom: 5px !important;
+
+}
+
+#main {
+
+    padding-top: 15px !important;
+
+}
+
+#page-title {
+   padding: 0 !important;
+} 
+
+.category-awards .widget-title {
+
+    display: none;
+}
+
+.category-awards .caption .cat a {
+    display: none;
+}
+
+.category-awards .caption .button {
+    display: none;
+}
+
+.category-awards .caption h2, .category-awards .caption h3 {
+
+    font-size: 120%;
+}
+
+.category-awards .content .date {
+
+    padding-left: 0;
+    border: 0;
+    margin-left: 0;
+}
+
+.homepage-directions {
+
+    width: 100%;
+    background: white;
+
+    text-transform: uppercase;
+    
+    font-family: 'Lato', arial;
+    font-size: 80%;
+}
+
+.homepage-directions-inner {
+    
+    padding-bottom: 25px;
+
+    width: 450px;
+    margin: 0 auto;
+    max-width: 100%;
+
+    padding: 5px 10px 5px 10px;
+
+    background: white;
+
+    color: #333;
+    border-radius: 3px;    
+
+    margin-bottom: 15px;
+
+    position: relative;
+
+    overflow: hidden;
+/*
+    border: 1px solid #333;
+*/
+    }
+
+.homepage-directions p {
+
+    width: 33%;
+    float: left;
+
+    padding: 5px;
+
+    text-align: center;
+
+}
+
+.homepage-directions h2 {
+
+    font-size: 150%;
+
+} 
+
+.homepage-directions a {
+
+    color: #333;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+
+    text-decoration: underline;
+
+}
+
+.homepage-directions .google-maps {
+
+    border: 1px solid #333;
+    text-decoration: none;
+
+}
+
+.about-us-short {
+
+    padding-bottom: 30px;
+    padding-top: 16px;
+    border-bottom: 1px solid white;
+    margin-bottom: 23px
+}
+
+.social-feed {                                                                                                  
+
+    display: none;
+
+}    
+
+.last-match-report .widget-title {
+
+    display: none;
+
+}
+
+.last-match-report .related-content {
+
+    clear: both;
+
+    padding-bottom: 10px;
+
+}
+
+.summary-news {
+
+    position: relative;
+    padding-top: 15px;
+    margin-left: -15px;
+}
+
+.summary-news .category-awards .caption .cat a {
+
+    display: block;
+}
+
+.home .grid-post {
+
+    padding-bottom: 20px; 
+
+}
+
+@media  (max-width: 480px) { 
+
+    .grid-post {
+
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media  (min-width: 600px) { 
+
+    .social-feed {
+
+        display: block;
+
+        float: right !important;
+        width: 30% !important;
+
+    }
+
+    .last-match-report .author-content, .last-match-report .single-content {
+
+        float: left;
+        width: 65%;
+        padding-right: 5%;
+        overflow: hidden;
+
+    }
+}
+
+
+@media  (min-width: 800px) {   
+
+    .contact, .directions {
+
+        width: 50%;
+        float: left;
+
+    }
+
+    .homepage-directions {
+
+
+    }
+
+}
+
+@media  (min-width: 650px) { 
+
+    .home #logo {
+
+        position: absolute;
+        width: 100%; 
+
+    }
+    .home #logo a {
+
+        position: relative;
+        z-index: 1;
+    } 
+
+    .home #logo .container:after {
+        content: "";
+        display: block;
+        background-color: rgba(255, 255, 255, 0.25);
+        filter: blur(2px);
+        border-radius: 170px;
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        margin-left: -137px;
+        z-index: 0;
+    }
+    .title-image {
+
+        display: block;
+
+    }
+}
+
+
+
+
+
+
+ /*
+  * ################################
+  */
+
+
 
 /** GENERIC  ELEMENT **/
 #featured,

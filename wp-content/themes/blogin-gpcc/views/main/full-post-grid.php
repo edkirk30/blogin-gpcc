@@ -1,4 +1,4 @@
-<h3 class="widget-title"><?php _e('Latest Posts', 'blogim'); ?></h3>
+<h3 class="widget-title full-post-grid"><?php _e('Latest Posts', 'blogim'); ?></h3>
 <div class="wrap">
     <?php
     $blogim_i = 1;
@@ -11,8 +11,11 @@
             $blogim_class_format = '';
             if ($blogim_i <= 1) {
                 $blogim_img_url = esc_url( wp_get_attachment_url($blogim_thumb, 'full') ); //get img URL
-                $blogim_img = aq_resize($blogim_img_url, 1140, 666, true, true, true); //resize & crop img
+                #$blogim_img = aq_resize($blogim_img_url, 1140, 666, true, true, true); //resize & crop img
+                $blogim_img = $blogim_img_url; #wp_get_attachment_image($blogim_thumb);
                 $blogim_img = ($blogim_img == '') ? esc_url( get_template_directory_uri() ) . '/assets/img/fallback-1140x666.jpg' : $blogim_img;
+
+                #$blogim_img = wp_get_attachment_image_src($blogim_thumb);
                 $blogim_class_format = 'content full-post';
             } else {
                 $blogim_img_url = esc_url( wp_get_attachment_url($blogim_thumb, 'full') ); //get img URL

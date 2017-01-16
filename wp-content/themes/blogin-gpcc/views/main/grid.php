@@ -1,8 +1,6 @@
-<h3 class="widget-title"><?php _e('Latest Posts', 'blogim'); ?></h3>
+<h3 class="widget-title">grid.php - <?php _e('Latest Posts', 'blogim'); ?></h3>
 <div class="wrap">
     <div class="row">
-qwedfeqwdewdewdweded:wq
-
 
         <?php
         $blogim_clear = 1;
