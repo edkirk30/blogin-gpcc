@@ -44,6 +44,10 @@ h1 {
     font-size: 200%;
 }
 
+.external-width-iframe {
+    display: none;
+}
+
 .title-image {
 
     display:none;
@@ -282,6 +286,10 @@ article p, article div {
 
 
 @media  (min-width: 800px) {   
+
+    .external-width-iframe {
+       display: block;
+    }
 
     .contact, .directions {
 
