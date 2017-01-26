@@ -1,5 +1,7 @@
 (function( $ ) {
 	'use strict'
+
+	//
 	// Init global DOM elements, functions and arrays
   	window.app 			 				= {el : {}, fn : {}};
 	app.el['window']     					= $(window);
@@ -11,6 +13,7 @@
 	/****** LETS START THE ENGINE !!! *******/
 	
 	app.el['document'].ready(function(){
+
 		$('#featured').fadeIn();
                 $(".format-text iframe,.format-text embed").closest('p').fitVids();
 		$('#featured.carousel .slick-carousel').slick({
@@ -91,5 +94,16 @@
                         e.preventDefault();
                         $(this).closest('.widget_search').find('form').submit();
                 });
+
+
+		//GPCC mods/hacks
+
+		//Fix menu sub menu issue
+		$('#mobilemenu .sf-with-ul').each(function () {
+		    var $this = $(this);
+		    $this.parent().append($this.html());
+		    $this.hide();
+		});
+
 	});	
 })(jQuery);
